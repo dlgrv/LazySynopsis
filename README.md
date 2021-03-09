@@ -11,3 +11,4 @@
 Пример сгенерированного фото:
 
 ![alt tag](https://i.ibb.co/WV5qW9M/1.png"1")​ 
+![alt tag](https://i.ibb.co/Dr66Dh9/1.png")​ 
