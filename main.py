@@ -15,7 +15,7 @@ number_paper = 11
 enter = 0
 additional_indent = 0
 indent = 0
-
+# 1 OR 2
 fonts_numb = 1
 
 doc = docx.Document('text.docx')
@@ -28,7 +28,7 @@ font = ImageFont.truetype(f'fonts/{fonts_numb}.ttf', size=sets[fonts_numb][0])
 
 for i in range(len(text)):
     if len(text[i]) < sets[fonts_numb][1]:
-        indent = sets[fonts_numb][5] + random.randint(-2,2)
+        indent = sets[fonts_numb][5] + random.randint(-2, 2)
         draw_text = ImageDraw.Draw(imag)
         draw_text.text((indent, sets[fonts_numb][4] + sets[fonts_numb][3]*enter),
                        text[i],
@@ -57,7 +57,6 @@ for i in range(len(text)):
                 enter = 0
                 if number_paper == 11:
                     number_paper = 12
-                    #------------------------------------------------------------------
                     offset = {1: -7, 1.3: -10, 1.5: -11,
                               -1: -7, -1.3: -10, -1.5: -11}
                     offset_list = []
@@ -79,7 +78,6 @@ for i in range(len(text)):
                     # ДОБАВЛЯЕМ ТЕНИ И СВЕТ
                     watermark = Image.open('trash/1.png')
                     imag.paste(watermark, (random.randint(-730, 0), 0), watermark)
-                    #------------------------------------------------------------------
                     imag.save(f"{number_file}.png")
                     imag = Image.open('paper/12.png')
                     number_file += 1
@@ -87,7 +85,6 @@ for i in range(len(text)):
                     enter = 0
                 else:
                     number_paper = 11
-                    # ------------------------------------------------------------------
                     offset = {0: 0, 0: 0, 0: 0}
                     offset_list = []
                     for i in offset.keys():
@@ -109,7 +106,6 @@ for i in range(len(text)):
                     # ДОБАВЛЯЕМ ТЕНИ И СВЕТ
                     watermark = Image.open('trash/1.png')
                     imag.paste(watermark, (random.randint(-730, 0), 0), watermark)
-                    # ------------------------------------------------------------------
                     imag.save(f"{number_file}.png")
                     imag = Image.open('paper/11.png')
                     number_file += 1
