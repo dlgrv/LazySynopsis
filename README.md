@@ -7,4 +7,6 @@
 - Pillow 
 - python-docx
 
+Пример сгенерированного фото:
+
 ![alt tag](https://i.ibb.co/WV5qW9M/1.png"1")​
