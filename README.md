@@ -6,3 +6,5 @@
 Использовались следующие библиотеки:
 - Pillow 
 - python-docx
+
+![alt tag](https://i.ibb.co/WV5qW9M/1.png"1")​
